@@ -1,0 +1,13 @@
+fastapi
+uvicorn[standard]
+websockets
+speechbrain
+torch
+torchaudio
+numpy
+scipy
+pydub
+librosa
+webrtcvad
+noisereduce
+python-multipart
