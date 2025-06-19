@@ -275,7 +275,7 @@ async def analyze_audio_file(file: UploadFile = File(...)):
         raise
     except Exception as e:
         raise HTTPException(status_code=500, detail=f"Audio analysis failed: {str(e)}")
-
+PORT = 8000
 if __name__ == "__main__":
     import uvicorn
-    uvicorn.run(app, host="0.0.0.0", port=8000)
+    uvicorn.run(app, host="0.0.0.0", port=PORT)
